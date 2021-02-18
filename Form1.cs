@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Part_3b___Basic_Input
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            //Click Event:
+
+
         }
     }
 }
