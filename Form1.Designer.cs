@@ -29,44 +29,53 @@
         private void InitializeComponent()
         {
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtInput = new System.Windows.Forms.TextBox();
+            this.lblInstruction = new System.Windows.Forms.Label();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(39, 28);
+            this.btnSubmit.Location = new System.Drawing.Point(15, 44);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(149, 107);
+            this.btnSubmit.Size = new System.Drawing.Size(103, 25);
             this.btnSubmit.TabIndex = 0;
             this.btnSubmit.Text = "Click Me";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // textBox1
+            // txtInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(240, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtInput.Location = new System.Drawing.Point(139, 9);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(101, 20);
+            this.txtInput.TabIndex = 1;
             // 
-            // label1
+            // lblInstruction
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(264, 148);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            
+            this.lblInstruction.AutoSize = true;
+            this.lblInstruction.Location = new System.Drawing.Point(12, 12);
+            this.lblInstruction.Name = "lblInstruction";
+            this.lblInstruction.Size = new System.Drawing.Size(121, 13);
+            this.lblInstruction.TabIndex = 2;
+            this.lblInstruction.Text = "Please enter your name:";
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.Location = new System.Drawing.Point(124, 50);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(218, 19);
+            this.lblMessage.TabIndex = 3;
+            this.lblMessage.Text = "Message";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(275, 97);
+            this.Controls.Add(this.lblMessage);
+            this.Controls.Add(this.lblInstruction);
+            this.Controls.Add(this.txtInput);
             this.Controls.Add(this.btnSubmit);
             this.Name = "MainForm";
             this.Text = "Getting Input";
@@ -78,8 +87,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.Label lblInstruction;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
 

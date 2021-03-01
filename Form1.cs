@@ -15,12 +15,17 @@ namespace Part_3b___Basic_Input
         public MainForm()
         {
             InitializeComponent();
+            string name;
         }
 
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             //Click Event:
+
+            string name = txtInput.Text;
+            lblMessage.Text = "Nice to meet you " + name;
+
 
 
         }
